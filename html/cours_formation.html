@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Cours et Formations - Efrei Service Informatique</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+    <body>
+            <header>
+            <script src="../js/menu.js"></script>
+            <button id="boutonMenu" onclick="showMenu()">
+                <img src="../img/Hamburger.png" id="menuIcon" alt="menu">
+            </button>
+
+            <div id="headerPrincipal">
+                <a href="./accueil.html"><img src="../img/Logo_Efrei_2022.svg.png" alt="EFREI"></a>
+            </div>
+        </header>
+
+        <div id="menuDeroulant">
+            <nav>
+                <div class="titreMenu">Menu</div>
+                <div class="page"><a href="./accueil.html">Accueil</a></div>
+                <div class="page"><a href="./cours_formation.html">Cours et formations</a></div>
+                <div class="page"><a href="./equipe_enseignante.html">Equipe enseignante</a></div>
+                <div class="page"><a href="./vie_etudiante.html">Vie étudiante</a></div>
+            </nav>
+        </div>
+
+        <main>
+            <div class="Titre-contenu">
+                <h1>Nos Cours et Formations</h1>
+            </div>
+
+            <div class="formations-expertises">
+                <h2>Les formations</h2>
+                <p>
+                    Découvrez nos différentes formations et trouvez celle qui vous correspond !
+                </p>
+            </div>
+
+            <section class="container">
+                <div class="liste-interactive">
+                    <div class="item-interactive" onclick="window.location.href='./prog_grande_ecole.html'">
+                        <div class="texte">
+                            <h3>Programme Grande École</h3>
+                            <p>Choisissez parmi nos filières et spécialités pour construire votre parcours d'ingénieur</p>
+                        </div>
+                        <div class="icon-fleche"><span>&rsaquo;</span></div>
+                    </div>
+
+                    <div class="item-interactive" onclick="window.location.href='./prog_tech_num.html'">
+                        <div class="texte">
+                            <h3>Programme Technologie & Numérique</h3>
+                            <p>Découvrez nos formations pour construire un parcours qui vous ressemble</p>
+                        </div>
+                        <div class="icon-fleche"><span>&rsaquo;</span></div>
+                    </div>
+
+                    <div class="item-interactive" onclick="window.location.href='./prog_digi_manage.html'">
+                        <div class="texte">
+                            <h3>Programme Digital & Management</h3>
+                            <p>Devenez expert en communication digitale, marketing ou UX design.</p>
+                        </div>
+                        <div class="icon-fleche"><span>&rsaquo;</span></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="principal-footer">
+            <div class="contenu-footer">
+                <div class="section-footer">
+                    <h3>Contact et Infos:</h3>
+                    <ul>
+                        <li>Email : contact@efrei.fr</li>
+                        <li>Tel : +33 06 35 13 53 62</li>
+                        <li><a href="../html/about.html" class="bouton-contact">A propos</a></li>
+                    </ul>
+                </div>
+
+                <div class="section-footer">
+                    <h3>Réseaux Sociaux:</h3>
+                    <div class="liens-réseaux">
+                        <a href="https://www.linkedin.com/school/efrei/">Linkedin</a>
+                        <a href="https://www.instagram.com/efrei_paris/?hl=fr">Instagram</a>
+                    </div>
+                </div>
+                <div class="bas-footer">
+                    <p>&copy; 2026 Efrei - Paris Panthéon-Assas Université</p>
+                </div>
+            </div>
+            <div class="domeDiv"><img src="../img/dome.png" class="dome" alt="dome"></div>
+        </footer>
+    </body>
+</html>

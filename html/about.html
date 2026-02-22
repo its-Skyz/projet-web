@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Accueil - Efrei Service Informatique</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <script src="../js/menu.js"></script>
+            <button id="boutonMenu" onclick="showMenu()">
+                <img src="../img/Hamburger.png" id="menuIcon" alt="menu">
+            </button>
+
+            <div id="headerPrincipal">
+                <a href="./accueil.html"><img src="../img/Logo_Efrei_2022.svg.png" alt="EFREI"></a>
+            </div>
+        </header>
+
+        <div id="menuDeroulant">
+            <nav>
+                <div class="titreMenu">Menu</div>
+                <div class="page"><a href="./accueil.html">Accueil</a></div>
+                <div class="page"><a href="./cours_formation.html">Cours et formations</a></div>
+                <div class="page"><a href="./equipe_enseignante.html">Equipe enseignante</a></div>
+                <div class="page"><a href="./vie_etudiante.html">Vie étudiante</a></div>
+            </nav>
+        </div>
+
+        <main>
+            <div class="formations-expertises">
+                <h2>A propos</h2>
+                <p>Merci d'avoir consulté notre site. Ce projet est un site Web créée en HTML, CSS et JavaScript par Lorenzo Rivallin et Clément Berton pour le service Informatique de l'EFREI. Le contenu des pages, la navigation, et les scripts ont été créés par Lorenzo Rivallin, tandis que Clément Berton s'est occupé de l'aspect visuel et du format des pages.</p>
+            </div>
+
+            <section class="details-efrei">
+                <div class="cycle-formation">
+                    <h2>Contactez nous directement via :</h2>
+                    <div class="grille-expertise">
+                        <div class="contenu">
+                            <h3>Lorenzo Rivallin</h3>
+                            <p><a href="www.linkedin.com/in/lorenzorivallin">LinkedIn</a> ou <a href="mailto:lorenzo.rivallin@efrei.net">E-mail</a></p>
+                        </div>
+                        <div class="contenu">
+                            <h3>Clément Berton</h3>
+                            <p><a href="https://www.linkedin.com/in/clement-berton92/">LinkedIn</a> ou <a href="mailto:clement.berton@efrei.net">E-mail</a></p>
+                        </div>
+                    </div>
+
+                    <h2>Ou remplissez ce formulaire de contact :</h2>
+                    <form class="contact" id="contact" action="javascript:;" onsubmit="envoyer()">
+                        <fieldset>
+                            <legend>Informations</legend>
+                            <label for="nom">Nom :</label>
+                            <input type="text" name="nom" id="nom" required placeholder="Dupont"><br>
+                            <label for="prenom">Prenom :</label>
+                            <input type="text" name="prenom" id="prenom" required placeholder="Jean"><br>
+                            <label for="email">E-mail :</label>
+                            <input type="email" name="email" id="email" required placeholder="jean.dupont@efrei.net"><br>
+                            <label for="profession">Profession :</label>
+                            <input type="text" name="profession" id="profession" placeholder="Développeur web">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Message</legend>
+                            <label for="type">Type de demande :</label>
+                            <select name="type" id="type" required>
+                                <option selected disabled value="">Sélectionnez un type de demande</option>
+                                <option value="commande">Commande</option>
+                                <option value="demande de collaboration">Demande de collaboration</option>
+                                <option value="offre de stage ou d'alternace">Offre de stage / alternance</option>
+                                <option value="message">Autre</option>
+                            </select><br>
+                            <textarea name="message" id="message" placeholder="Entrez votre message ici"></textarea>
+                        </fieldset>
+
+                        <button type="submit" class="send" id="send">Envoyer</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="principal-footer">
+            <div class="contenu-footer">
+                <div class="section-footer">
+                    <h3>Contact et Infos:</h3>
+                    <ul>
+                        <li>Email : contact@efrei.fr</li>
+                        <li>Tel : +33 06 35 13 53 62</li>
+                        <li><a href="../html/about.html" class="bouton-contact">A propos</a></li>
+                    </ul>
+                </div>
+
+                <div class="section-footer">
+                    <h3>Réseaux Sociaux:</h3>
+                    <div class="liens-réseaux">
+                        <a href="https://www.linkedin.com/school/efrei/">Linkedin</a>
+                        <a href="https://www.instagram.com/efrei_paris/?hl=fr">Instagram</a>
+                    </div>
+                </div>
+                <div class="bas-footer">
+                    <p>&copy; 2026 Efrei - Paris Panthéon-Assas Université</p>
+                </div>
+            </div>
+            <div class="domeDiv"><img src="../img/dome.png" class="dome" alt="dome"></div>
+        </footer>
+
+        <script src="../js/form.js"></script>
+    </body>
+</html> 

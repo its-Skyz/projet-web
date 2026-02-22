@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Vie Étudiante - Efrei Service Informatique</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <script src="../js/menu.js"></script>
+            <button id="boutonMenu" onclick="showMenu()">
+                <img src="../img/Hamburger.png" id="menuIcon" alt="menu">
+            </button>
+
+            <div id="headerPrincipal">
+                <a href="./accueil.html"><img src="../img/Logo_Efrei_2022.svg.png" alt="EFREI"></a>
+            </div>
+        </header>
+
+        <div id="menuDeroulant">
+            <nav>
+                <div class="titreMenu">Menu</div>
+                <div class="page"><a href="./accueil.html">Accueil</a></div>
+                <div class="page"><a href="./cours_formation.html">Cours et formations</a></div>
+                <div class="page"><a href="./equipe_enseignante.html">Equipe enseignante</a></div>
+                <div class="page"><a href="./vie_etudiante.html">Vie étudiante</a></div>
+            </nav>
+        </div>
+
+        <main>
+            <div class="hero-header-vie" style="background-image: linear-gradient(rgba(0,0,50,0.6), rgba(0,0,50,0.6)), url('../img/assos.jpg');">
+                <h1>Vie Étudiante</h1>
+            </div>
+
+            <div class="formations-expertises">
+                <h2>La vie étudiante</h2>
+                <p>L'école priorise la vie étudiante de ses élèves, afin qu'ils puissent étudier tout en pouvant s'épanouir à travers de nombreuses activités organisées par nos associations, sur un campus agréable ou encore à l'international.</p>
+            </div>
+
+            <section class="container">
+                <div class="liste-interactive">
+                    <div class="item-interactive" onclick="window.location.href='./assos.html'">
+                        <div class="texte">
+                            <h3>Associations</h3>
+                            <p>Découvrez plus de 60 associations pour vivre vos passions.</p>
+                        </div>
+                        <div class="icon-fleche"><span>&rsaquo;</span></div>
+                    </div>
+
+                    <div class="item-interactive" onclick="window.location.href='./campus.html'">
+                        <div class="texte">
+                            <h3>Services & Campus</h3>
+                            <p>Espaces de coworking, Hub d'innovation et vie quotidienne.</p>
+                        </div>
+                        <div class="icon-fleche"><span>&rsaquo;</span></div>
+                    </div>
+
+                    <div class="item-interactive" onclick="window.location.href='./international.html'">
+                        <div class="texte">
+                            <h3>Ouverture Internationale</h3>
+                            <p>Échanges culturels et préparation aux semestres à l'étranger.</p>
+                        </div>
+                        <div class="icon-fleche"><span>&rsaquo;</span></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="principal-footer">
+            <div class="contenu-footer">
+                <div class="section-footer">
+                    <h3>Contact et Infos:</h3>
+                    <ul>
+                        <li>Email : contact@efrei.fr</li>
+                        <li>Tel : +33 06 35 13 53 62</li>
+                        <li><a href="../html/about.html" class="bouton-contact">A propos</a></li>
+                    </ul>
+                </div>
+
+                <div class="section-footer">
+                    <h3>Réseaux Sociaux:</h3>
+                    <div class="liens-réseaux">
+                        <a href="https://www.linkedin.com/school/efrei/">Linkedin</a>
+                        <a href="https://www.instagram.com/efrei_paris/?hl=fr">Instagram</a>
+                    </div>
+                </div>
+                <div class="bas-footer">
+                    <p>&copy; 2026 Efrei - Paris Panthéon-Assas Université</p>
+                </div>
+            </div>
+            <div class="domeDiv"><img src="../img/dome.png" class="dome" alt="dome"></div>
+        </footer>
+    </body>
+</html>

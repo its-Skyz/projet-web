@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Campus - Efrei Service Informatique</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <script src="../js/menu.js"></script>
+            <button id="boutonMenu" onclick="showMenu()">
+                <img src="../img/Hamburger.png" id="menuIcon" alt="menu">
+            </button>
+
+            <div id="headerPrincipal">
+                <a href="./accueil.html"><img src="../img/Logo_Efrei_2022.svg.png" alt="EFREI"></a>
+            </div>
+        </header>
+
+        <div id="menuDeroulant">
+            <nav>
+                <div class="titreMenu">Menu</div>
+                <div class="page"><a href="./accueil.html">Accueil</a></div>
+                <div class="page"><a href="./cours_formation.html">Cours et formations</a></div>
+                <div class="page"><a href="./equipe_enseignante.html">Equipe enseignante</a></div>
+                <div class="page"><a href="./vie_etudiante.html">Vie étudiante</a></div>
+            </nav>
+        </div>
+
+        <div class="popupBG" id="popupBG">
+            <div class="popup">
+                <img src="https://eng.efrei.fr/wp-content/uploads/2023/06/campus-8334-1536x1017-1.jpg" id="image" alt="image introuvable">
+            </div>
+        </div>
+
+        <main>
+            <div class="hero-header-vie" style="background-image: linear-gradient(rgba(0,0,50,0.6), rgba(0,0,50,0.6)), url('../img/assos.jpg');">
+                <h1>Campus</h1>
+            </div>
+
+            <div class="formations-expertises">
+                <h2>Les deux différents Campus</h2>
+                <p>Vous pourrez étudier dans notre école sur un des deux campus à Paris ou à Bordeaux.</p>
+            </div>
+
+            <section class="container">
+                <div class="cycle-formation">
+                    <section>
+                        <h2>Paris - La Maison</h2>
+                        <div class="liste-interactive">
+                            <div class="item-interactive" onclick="popup('https:/\/eng.efrei.fr/wp-content/uploads/2023/06/campus-8334-1536x1017-1.jpg')">
+                                <div class="texte">
+                                    <h3>Un campus fait pour les étudiants</h3>
+                                    <p>Il est le principal lieu de la vie étudiante, mais il dispose aussi de 100 salles de cours ainsi que de 2 amphithéâtres.</p>
+                                </div>
+                                <div class="icon-fleche"><span>&rsaquo;</span></div>
+                            </div>
+
+                            <div class="item-interactive" onclick="popup('https:/\/citoyens.com/wp-content/blogs.dir/2/files/2018/11/efrei.png')">
+                                <div class="texte">
+                                    <h3>Student Hub</h3>
+                                    <p>Espace de repos réservé aux étudiants.</p>
+                                </div>
+                                <div class="icon-fleche"><span>&rsaquo;</span></div>
+                            </div>
+
+                            <div class="item-interactive" onclick="popup('https:/\/vl-media.fr/wp-content/uploads/2021/11/Efrei-Paris-Campus-Villejuif-ILab-Campus-05009-1024x576.jpg')">
+                                <div class="texte">
+                                    <h3>Innovation lab</h3>
+                                    <p>Un espace de travail où les étudiants réalisent leur projet à l'aide de matériel mis à disposition.</p>
+                                </div>
+                                <div class="icon-fleche"><span>&rsaquo;</span></div>
+                            </div>
+
+                            <div class="item-interactive" onclick="popup('https:/\/ephoto.lescrous.fr/link/bum19mgt6ny3ebk.jpg')">
+                                <div class="texte">
+                                    <h3>Crous</h3>
+                                    <p>Un espace de restauration où peuvent manger les étudiants.</p>
+                                </div>
+                                <div class="icon-fleche"><span>&rsaquo;</span></div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section>
+                        <h2>Paris - New Republic</h2>
+                        <div class="liste-interactive">
+                            <div class="item-interactive" onclick="popup('https:/\/citoyens.com/wp-content/blogs.dir/2/files/2026/01/efrei-1-a5a-architectes.jpg')">
+                                <div class="texte">
+                                    <h3>Un batiment mêlant cours et activités.</h3>
+                                    <p>Le nouveau batiment offre 29 salles de cours mais aussi des installations permettant aux élèves de se reposer ou de travailler.</p>
+                                </div>
+                                <div class="icon-fleche"><span>&rsaquo;</span></div>
+                            </div>
+
+                            <div class="item-interactive" onclick="popup('../img/lunge.jpg')">
+                                <div class="texte">
+                                    <h3>L'espace lunge</h3>
+                                    <p>Une cafétéria où les élèves peuvent venir manger ou se reposer dans la journée.</p>
+                                </div>
+                                <div class="icon-fleche"><span>&rsaquo;</span></div>
+                            </div>
+
+                            <div class="item-interactive" onclick="popup('../img/cowork.jpg')">
+                                <div class="texte">
+                                    <h3>Des sales de co-working</h3>
+                                    <p>Différentes sales sont disponibles dans le batiment pour permettre aux élèves de travailler ensemble.</p>
+                                </div>
+                                <div class="icon-fleche"><span>&rsaquo;</span></div>
+                            </div>
+
+                            <div class="item-interactive" onclick="popup('../img/sport.jpg')">
+                                <div class="texte">
+                                    <h3>La sale de sport</h3>
+                                    <p>L'école met à disposition une sale de sport accessible à tout ses étudiants.</p>
+                                </div>
+                                <div class="icon-fleche"><span>&rsaquo;</span></div>
+                            </div>
+
+                            <div class="item-interactive" onclick="popup('https:/\/efreipicturestudio.fr/gallery/content/f/696d55dc8b68cf06b56f1148/124f992d763?a=b')">
+                                <div class="texte">
+                                    <h3>La sale de danse</h3>
+                                    <p>Une sale de danse créée spécialement pour l'association de danse de l'EFREI.</p>
+                                </div>
+                                <div class="icon-fleche"><span>&rsaquo;</span></div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section>
+                        <h2>Paris - Boulevard Maxime Gorki</h2>
+                        <div class="liste-interactive">
+                            <div class="item-interactive" onclick="popup('../img/factory.png')">
+                                <div class="texte">
+                                    <h3>La Factory</h3>
+                                    <p>Un batiment dédié principalement aux cours s'étandant sur 4 étages.</p>
+                                </div>
+                                <div class="icon-fleche"><span>&rsaquo;</span></div>
+                            </div>
+
+                            <div class="item-interactive" onclick="popup('../img/aquarium.png')">
+                                <div class="texte">
+                                    <h3>L'Aquarium</h3>
+                                    <p>Le batiment où les élèves étudieront les langues.</p>
+                                </div>
+                                <div class="icon-fleche"><span>&rsaquo;</span></div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section>
+                        <h2>Bordeaux</h2>
+                        <div class="liste-interactive">
+                            <div class="item-interactive" onclick="popup('https:/\/www.frenchtechbordeaux.com/storage/articles/bordeaux-2023-1.png')">
+                                <div class="texte">
+                                    <h3>La Campus Bordeaux</h3>
+                                    <p>Ce Campus permet d'étendre l'influence de l'EFREI pour permettre aux Bordelais d'accéder aux cours de notre école.</p>
+                                </div>
+                                <div class="icon-fleche"><span>&rsaquo;</span></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </main>
+
+        <footer class="principal-footer">
+            <div class="contenu-footer">
+                <div class="section-footer">
+                    <h3>Contact et Infos:</h3>
+                    <ul>
+                        <li>Email : contact@efrei.fr</li>
+                        <li>Tel : +33 06 35 13 53 62</li>
+                        <li><a href="../html/about.html" class="bouton-contact">A propos</a></li>
+                    </ul>
+                </div>
+
+                <div class="section-footer">
+                    <h3>Réseaux Sociaux:</h3>
+                    <div class="liens-réseaux">
+                        <a href="https://www.linkedin.com/school/efrei/">Linkedin</a>
+                        <a href="https://www.instagram.com/efrei_paris/?hl=fr">Instagram</a>
+                    </div>
+                </div>
+                <div class="bas-footer">
+                    <p>&copy; 2026 Efrei - Paris Panthéon-Assas Université</p>
+                </div>
+            </div>
+            <div class="domeDiv"><img src="../img/dome.png" class="dome" alt="dome"></div>
+        </footer>
+
+        <script src="../js/popup.js"></script>
+    </body>
+</html>

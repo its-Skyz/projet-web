@@ -3,5 +3,5 @@ function envoyer() {
     const prenom = document.getElementById("prenom");
     const demande = document.getElementById("type");
     
-    alert("Merci " + prenom.value + " " + nom.value + " pour votre " + demande.value + ". Nous vous recontacterons dans un délais de trois semaines.");
+    alert("Merci " + prenom.value + " " + nom.value + " pour votre " + demande.value + ". Nous vous recontacterons dans un délai de 3 semaines.")
 }
